@@ -2,14 +2,42 @@ using UnityEngine;
 
 public class MovimientoJugadorSimple : MonoBehaviour
 {
-    public float velocidad = 5f;
+    public float fuerzaMovimiento = 20f;
 
-    void Update()
+    private Rigidbody rb;
+
+    void Start()
     {
-        float moverX = Input.GetAxis("Horizontal");
-        float moverZ = Input.GetAxis("Vertical");
+        rb = GetComponent<Rigidbody>();
 
-        Vector3 direccion = new Vector3(moverX, 0f, moverZ);
-        transform.Translate(direccion * velocidad * Time.deltaTime, Space.World);
+        if (rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody>();
+        }
+
+        rb.freezeRotation = true;
+    }
+
+    void FixedUpdate()
+    {
+        if (Input.GetKey(KeyCode.W))
+        {
+            rb.AddForce(Vector3.forward * fuerzaMovimiento);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddForce(Vector3.back * fuerzaMovimiento);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddForce(Vector3.left * fuerzaMovimiento);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddForce(Vector3.right * fuerzaMovimiento);
+        }
     }
 }

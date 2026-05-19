@@ -1,5 +1,4 @@
 using UnityEngine;
-using TMPro;
 
 public class ControlVictoria : MonoBehaviour
 {
@@ -10,13 +9,15 @@ public class ControlVictoria : MonoBehaviour
     public bool juegoGanado;
 
     public GameObject panelVictoria;
-    public TextMeshProUGUI textoAviso;
+    public TextMesh textoAviso;
     public float tiempoAviso = 2f;
 
-    float tiempoRestanteAviso;
+    private float tiempoRestanteAviso;
 
     void Start()
     {
+        juegoGanado = false;
+
         if (panelVictoria != null)
         {
             panelVictoria.SetActive(false);
@@ -30,7 +31,17 @@ public class ControlVictoria : MonoBehaviour
 
     void Update()
     {
-        if (textoAviso != null && textoAviso.gameObject.activeSelf)
+        ControlarAviso();
+    }
+
+    void ControlarAviso()
+    {
+        if (textoAviso == null)
+        {
+            return;
+        }
+
+        if (textoAviso.gameObject.activeSelf)
         {
             tiempoRestanteAviso -= Time.deltaTime;
 
@@ -59,15 +70,19 @@ public class ControlVictoria : MonoBehaviour
 
             Debug.Log("Has ganado");
         }
+        else
+        {
+            MostrarFaltanPruebas();
+        }
     }
 
     public void MostrarFaltanPruebas()
     {
-        Debug.Log("Completa las pruebas");
+        Debug.Log("Primero completa todas las pruebas");
 
         if (textoAviso != null)
         {
-            textoAviso.text = "Haz las pruebas;
+            textoAviso.text = "Primero completa todas las pruebas";
             textoAviso.gameObject.SetActive(true);
             tiempoRestanteAviso = tiempoAviso;
         }

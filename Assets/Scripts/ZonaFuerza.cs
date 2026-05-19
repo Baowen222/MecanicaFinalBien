@@ -9,7 +9,7 @@ public class ZonaFuerza : MonoBehaviour
         Rigidbody rb = otro.attachedRigidbody;
         if (rb != null)
         {
-            //fuerza continua con AddForce
+            
           
             rb.AddForce(direccionFuerza);
         }
