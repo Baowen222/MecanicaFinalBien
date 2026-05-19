@@ -119,6 +119,42 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &222715827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222715828}
+  m_Layer: 0
+  m_Name: Mapa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &222715828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222715827}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.990474, y: -138.41982, z: 405.001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 625673497}
+  - {fileID: 487649567}
+  - {fileID: 2097552028}
+  - {fileID: 546191679}
+  - {fileID: 1061640758}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &412954746
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +169,7 @@ GameObject:
   - component: {fileID: 412954748}
   - component: {fileID: 412954747}
   m_Layer: 0
-  m_Name: Caja_Fisica_3 (1)
+  m_Name: Muro
   m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -249,11 +285,11 @@ Transform:
   m_GameObject: {fileID: 412954746}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.65, y: 0.68, z: 33.97}
+  m_LocalPosition: {x: 9.245913, y: 132.40088, z: -373.61667}
   m_LocalScale: {x: 3.44734, y: 5.07332, z: 1.21821}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1644670812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &437938865
 GameObject:
@@ -267,7 +303,7 @@ GameObject:
   - component: {fileID: 437938867}
   - component: {fileID: 437938866}
   m_Layer: 0
-  m_Name: Texto_1._Lanza_la_bola_con_E
+  m_Name: LanzaBOla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,11 +385,11 @@ Transform:
   m_GameObject: {fileID: 437938865}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 7}
+  m_LocalPosition: {x: 43.223682, y: 135.8054, z: -399.0604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 680599593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487649563
 GameObject:
@@ -368,7 +404,7 @@ GameObject:
   - component: {fileID: 487649565}
   - component: {fileID: 487649564}
   m_Layer: 0
-  m_Name: Pared_Fondo
+  m_Name: Pared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,11 +493,11 @@ Transform:
   m_GameObject: {fileID: 487649563}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -10}
+  m_LocalPosition: {x: 9.990474, y: 140.41982, z: -415.001}
   m_LocalScale: {x: 14, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 222715828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &520697256
 GameObject:
@@ -574,7 +610,7 @@ GameObject:
   - component: {fileID: 546191677}
   - component: {fileID: 546191676}
   m_Layer: 0
-  m_Name: Pared_Derecha_1
+  m_Name: Pared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,11 +699,11 @@ Transform:
   m_GameObject: {fileID: 546191675}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7, y: 2, z: 35}
+  m_LocalPosition: {x: 16.990475, y: 140.41982, z: -370.001}
   m_LocalScale: {x: 1, y: 4, z: 90}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 222715828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625673493
 GameObject:
@@ -771,11 +807,11 @@ Transform:
   m_GameObject: {fileID: 625673493}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 35}
+  m_LocalPosition: {x: 9.990474, y: 137.91982, z: -370.001}
   m_LocalScale: {x: 14, y: 1, z: 90}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 222715828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &673601041
 GameObject:
@@ -791,7 +827,7 @@ GameObject:
   - component: {fileID: 673601043}
   - component: {fileID: 673601042}
   m_Layer: 0
-  m_Name: Obstaculo_3
+  m_Name: Bola
   m_TagString: Bola
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -907,10 +943,46 @@ Transform:
   m_GameObject: {fileID: 673601041}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.07, y: 1, z: 77.14}
+  m_LocalPosition: {x: 11.07, y: -30.6, z: 77.14}
   m_LocalScale: {x: 1.5999999, y: 1.5999999, z: 1.5999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &680599592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 680599593}
+  m_Layer: 0
+  m_Name: Textos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &680599593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680599592}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -43.223682, y: -133.2054, z: 406.0604}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 437938868}
+  - {fileID: 1444991316}
+  - {fileID: 853137768}
+  - {fileID: 827062590}
+  - {fileID: 1896796316}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &737461477
@@ -963,7 +1035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5a401edc28cd746be37d6003bf6cb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 5
+  fuerzaMovimiento: 25
 --- !u!54 &737461480
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1095,7 +1167,7 @@ GameObject:
   - component: {fileID: 827062589}
   - component: {fileID: 827062588}
   m_Layer: 0
-  m_Name: "Texto_4._Empuja_una_caja_al_bot\xF3n_amarillo"
+  m_Name: CajaAlboton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1177,11 +1249,11 @@ Transform:
   m_GameObject: {fileID: 827062587}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 51}
+  m_LocalPosition: {x: 43.223682, y: 135.8054, z: -355.0604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 680599593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
@@ -1280,7 +1352,7 @@ GameObject:
   - component: {fileID: 850707823}
   - component: {fileID: 850707822}
   m_Layer: 0
-  m_Name: Caja_Fisica_3
+  m_Name: Caja
   m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1396,11 +1468,11 @@ Transform:
   m_GameObject: {fileID: 850707821}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.8, z: 46}
+  m_LocalPosition: {x: 10.895913, y: 132.52089, z: -361.58667}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1644670812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &853137765
 GameObject:
@@ -1414,7 +1486,7 @@ GameObject:
   - component: {fileID: 853137767}
   - component: {fileID: 853137766}
   m_Layer: 0
-  m_Name: Texto_2._Usa_la_zona_azul_para_ganar_velocidad
+  m_Name: UsaZonaAzul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1496,11 +1568,11 @@ Transform:
   m_GameObject: {fileID: 853137765}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.6, z: 18}
+  m_LocalPosition: {x: 43.223682, y: 135.8054, z: -388.0604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 680599593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903105983
 GameObject:
@@ -1632,11 +1704,11 @@ Transform:
   m_GameObject: {fileID: 903105983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 0.8, z: 68}
+  m_LocalPosition: {x: 10.395913, y: 132.52089, z: -339.58667}
   m_LocalScale: {x: 2, y: 1.5999999, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1644670812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1061640754
 GameObject:
@@ -1651,7 +1723,7 @@ GameObject:
   - component: {fileID: 1061640756}
   - component: {fileID: 1061640755}
   m_Layer: 0
-  m_Name: Rampa_Fisica
+  m_Name: Rampa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1740,11 +1812,11 @@ Transform:
   m_GameObject: {fileID: 1061640754}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21643962, y: -0, z: -0, w: 0.976296}
-  m_LocalPosition: {x: 0, y: 1.1, z: 25}
-  m_LocalScale: {x: 4, y: 0.7, z: 7}
+  m_LocalPosition: {x: 9.990474, y: 139.51982, z: -380.001}
+  m_LocalScale: {x: 4, y: 0.70000005, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 222715828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1171307185
 GameObject:
@@ -1760,7 +1832,7 @@ GameObject:
   - component: {fileID: 1171307187}
   - component: {fileID: 1171307186}
   m_Layer: 0
-  m_Name: Caja_Fisica_3 (2)
+  m_Name: Muro
   m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1876,11 +1948,11 @@ Transform:
   m_GameObject: {fileID: 1171307185}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.04, y: 0.68, z: 33.97}
+  m_LocalPosition: {x: 14.935913, y: 132.40088, z: -373.61667}
   m_LocalScale: {x: 3.44734, y: 5.07332, z: 1.21821}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1644670812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1339634461
 GameObject:
@@ -2018,7 +2090,7 @@ GameObject:
   - component: {fileID: 1367749405}
   - component: {fileID: 1367749404}
   m_Layer: 0
-  m_Name: Caja_Fisica_1
+  m_Name: Caja
   m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2134,11 +2206,11 @@ Transform:
   m_GameObject: {fileID: 1367749403}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.8, z: 40}
+  m_LocalPosition: {x: 9.895913, y: 132.52089, z: -367.58667}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1644670812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1373340234
 GameObject:
@@ -2392,11 +2464,11 @@ Transform:
   m_GameObject: {fileID: 1401819275}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8, y: 0.8, z: 74}
+  m_LocalPosition: {x: 13.695913, y: 132.52089, z: -333.58667}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1644670812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444991313
 GameObject:
@@ -2410,7 +2482,7 @@ GameObject:
   - component: {fileID: 1444991315}
   - component: {fileID: 1444991314}
   m_Layer: 0
-  m_Name: Texto_6._Llega_a_la_meta_verde
+  m_Name: LLegaMeta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2492,11 +2564,11 @@ Transform:
   m_GameObject: {fileID: 1444991313}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.8, z: 85}
+  m_LocalPosition: {x: 43.223682, y: 136.0054, z: -321.0604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 680599593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1538848799
 GameObject:
@@ -2662,6 +2734,45 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1644670811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644670812}
+  m_Layer: 0
+  m_Name: Obstaculos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1644670812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644670811}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.895913, y: -131.72089, z: 407.58667}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1171307190}
+  - {fileID: 1778004793}
+  - {fileID: 903105988}
+  - {fileID: 1719263437}
+  - {fileID: 1401819280}
+  - {fileID: 850707826}
+  - {fileID: 1367749408}
+  - {fileID: 412954751}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1660054728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,7 +2818,7 @@ GameObject:
   - component: {fileID: 1719263434}
   - component: {fileID: 1719263433}
   m_Layer: 0
-  m_Name: Caja_Fisica_2
+  m_Name: Caja
   m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2823,11 +2934,11 @@ Transform:
   m_GameObject: {fileID: 1719263432}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 0.8, z: 43}
+  m_LocalPosition: {x: 13.895913, y: 132.52089, z: -364.58667}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1644670812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1728362314
 GameObject:
@@ -2966,7 +3077,7 @@ GameObject:
   - component: {fileID: 1778004790}
   - component: {fileID: 1778004789}
   m_Layer: 0
-  m_Name: Caja_Fisica_4
+  m_Name: Caja
   m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3082,11 +3193,11 @@ Transform:
   m_GameObject: {fileID: 1778004788}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.8, z: 49}
+  m_LocalPosition: {x: 12.895913, y: 132.52089, z: -358.58667}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1644670812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1874703565
 GameObject:
@@ -3102,7 +3213,7 @@ GameObject:
   - component: {fileID: 1874703567}
   - component: {fileID: 1874703566}
   m_Layer: 0
-  m_Name: Boton_Fisico
+  m_Name: Boton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3224,7 +3335,7 @@ GameObject:
   - component: {fileID: 1896796315}
   - component: {fileID: 1896796314}
   m_Layer: 0
-  m_Name: Texto_3._Rompe_la_pared_roja_con_la_bola
+  m_Name: RomperPared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3306,11 +3417,11 @@ Transform:
   m_GameObject: {fileID: 1896796313}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.4, z: 31}
+  m_LocalPosition: {x: 43.223682, y: 136.6054, z: -375.0604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 680599593}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2085274760
 GameObject:
@@ -3450,7 +3561,7 @@ GameObject:
   - component: {fileID: 2097552026}
   - component: {fileID: 2097552025}
   m_Layer: 0
-  m_Name: Pared_Izquierda_1
+  m_Name: Pared
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3539,11 +3650,11 @@ Transform:
   m_GameObject: {fileID: 2097552024}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7, y: 2, z: 35}
+  m_LocalPosition: {x: 2.9904747, y: 140.41982, z: -370.001}
   m_LocalScale: {x: 1, y: 4, z: 90}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 222715828}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1854070630938794099
 PrefabInstance:
@@ -3607,32 +3718,17 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 832575519}
-  - {fileID: 546191679}
   - {fileID: 737461484}
-  - {fileID: 2097552028}
   - {fileID: 1728362319}
-  - {fileID: 437938868}
   - {fileID: 520697259}
-  - {fileID: 487649567}
-  - {fileID: 625673497}
-  - {fileID: 1061640758}
   - {fileID: 1874703570}
-  - {fileID: 1778004793}
   - {fileID: 673601046}
-  - {fileID: 1444991316}
   - {fileID: 1339634466}
   - {fileID: 1538848803}
-  - {fileID: 903105988}
-  - {fileID: 853137768}
-  - {fileID: 412954751}
-  - {fileID: 827062590}
-  - {fileID: 1896796316}
   - {fileID: 2085274765}
-  - {fileID: 1719263437}
-  - {fileID: 1171307190}
   - {fileID: 1373340239}
   - {fileID: 832926096}
-  - {fileID: 1401819280}
-  - {fileID: 850707826}
-  - {fileID: 1367749408}
   - {fileID: 1854070630938794099}
+  - {fileID: 680599593}
+  - {fileID: 1644670812}
+  - {fileID: 222715828}
